@@ -9,35 +9,35 @@ import '../widgets/full_outlined_btn.dart';
 import '../widgets/slider-context.dart';
 import '../logic/create_account_cubit.dart';
 
-class Test {
+class ScreenSlides {
   final String title;
   final dynamic image;
 
-  Test(this.title, this.image);
+  ScreenSlides(this.title, this.image);
 }
 
 class CreateAccountScreen extends StatelessWidget {
-  final List<Test> images = [
-    Test(
+  final List<ScreenSlides> images = [
+    ScreenSlides(
       'Results archived for future viewing',
       SvgPicture.asset(
         'assets/images/Illustration.svg',
         height: double.infinity,
       ),
     ),
-    Test(
+    ScreenSlides(
       'Book a consultation with an expert',
       SvgPicture.asset(
         'assets/images/Path to pregnancy.svg',
         height: double.infinity,
       ),
     ),
-    Test(
+    ScreenSlides(
       'Quick and advanced support',
       'assets/images/l012e_4_e03 1.jpg',
       // SvgPicture.asset('assets/images/l012e_4_e03 1.svg'),
     ),
-    Test(
+    ScreenSlides(
       'Access tools to guide your fertility journey',
       SvgPicture.asset(
         'assets/images/Fertility tools.svg',
@@ -127,6 +127,15 @@ class CreateAccountScreen extends StatelessWidget {
                         modalTitle: 'Guest Login',
                         modalText:
                             'Creating an account allows YO to archive your results, gives you access to discounts and promotions, and improvise our ability to provide effective customer support.',
+                        buttons: [
+                          FullElevatedButton(
+                            buttonText: 'Create Account',
+                            callbackFn: () {},
+                          ),
+                          const FullOutlinedButton(
+                            buttonText: 'Continue As Guest',
+                          ),
+                        ],
                       ).open();
                     },
                     style: TextButton.styleFrom(

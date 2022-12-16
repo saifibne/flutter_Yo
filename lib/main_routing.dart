@@ -1,8 +1,8 @@
 import 'package:go_router/go_router.dart';
-import 'package:yo_3/Screens/create_account.dart';
+import 'package:yo_3/Screens/onboard_screens/create_account.dart';
 
-import './Screens/data_privacy.dart';
-import './Screens/service_terms.dart';
+import './Screens/onboard_screens/data_privacy.dart';
+import './Screens/onboard_screens/service_terms.dart';
 
 final router = GoRouter(
   routes: [

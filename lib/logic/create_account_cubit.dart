@@ -1,12 +1,13 @@
 import 'package:bloc/bloc.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:meta/meta.dart';
 
 part 'create_account_state.dart';
 
-class CreateAccountCubit extends Cubit<int> {
-  CreateAccountCubit() : super(0);
+class CreateAccountCubit extends Cubit<CreateAccountState> {
+  CreateAccountCubit() : super(CreateAccountInitial());
 
   void changePage(int page) {
-    emit(page);
+    emit(CreateAccount(page));
   }
 }

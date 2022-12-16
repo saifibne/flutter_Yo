@@ -80,7 +80,9 @@ flutter:
     - family: Outfit
       fonts:
         - asset: assets/fonts/Outfit-Regular.ttf
+          weight: 400
         - asset: assets/fonts/Outfit-SemiBold.ttf
+          weight: 500
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

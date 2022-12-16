@@ -1,5 +1,6 @@
 import 'package:go_router/go_router.dart';
 import 'package:yo_3/Screens/onboard_screens/create_account.dart';
+import 'package:yo_3/Screens/trivia_challange_screens/trivia_start.dart';
 
 import './Screens/onboard_screens/data_privacy.dart';
 import './Screens/onboard_screens/service_terms.dart';
@@ -17,6 +18,9 @@ final router = GoRouter(
     GoRoute(
       path: '/create-account',
       builder: (context, state) => CreateAccountScreen(),
-    )
+    ),
+    GoRoute(
+        path: '/trivia-challenge',
+        builder: (context, state) => const TriviaStartScreen())
   ],
 );

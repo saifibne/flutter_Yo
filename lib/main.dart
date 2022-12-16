@@ -25,6 +25,13 @@ class MyApp extends StatelessWidget {
             height: 1.4,
             color: Color(0xff262A2F),
           ),
+          titleSmall: TextStyle(
+            fontFamily: 'Outfit',
+            fontSize: 24,
+            fontWeight: FontWeight.w500,
+            height: 1.4,
+            color: Color(0xff262A2F),
+          ),
           bodyMedium: TextStyle(
             fontFamily: 'Outfit',
             fontSize: 16,

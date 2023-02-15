@@ -17,7 +17,7 @@ class CreateAccountButtons extends StatelessWidget {
           padding: const EdgeInsets.fromLTRB(25, 0, 25, 20),
           child: FullElevatedButton(
             buttonText: 'Create Account',
-            callbackFn: () => context.go('/trivia-challenge'),
+            callbackFn: () => context.go('/home'),
           ),
         ),
         const Padding(

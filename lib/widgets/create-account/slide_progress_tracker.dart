@@ -31,10 +31,13 @@ class SliderProgress extends StatelessWidget {
       margin: const EdgeInsets.symmetric(vertical: 25),
       child: BlocBuilder<CreateAccountCubit, CreateAccountState>(
         builder: (context, state) {
-          print(state);
           return Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: indicators(context, slideLength, state.activePage),
+            children: indicators(
+              context,
+              slideLength,
+              (state as CreateAccountInitial).activePage,
+            ),
           );
         },
       ),

@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
           ),
           titleSmall: TextStyle(
             fontFamily: 'Outfit',
-            fontSize: 24,
+            fontSize: 26,
             fontWeight: FontWeight.w500,
             height: 1.4,
             color: Color(0xff262A2F),

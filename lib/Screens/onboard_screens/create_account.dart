@@ -48,22 +48,19 @@ class CreateAccountScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (BuildContext context) => CreateAccountCubit(),
-      child: Scaffold(
-        body: Container(
-          padding: const EdgeInsets.fromLTRB(0, 60, 0, 10),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              /* Image Slides with the texts */
-              SliderContext(slides: images),
-              /* Image Slide progress indicators */
-              SliderProgress(slideLength: images.length),
-              /* Buttons for the Create Account Screen */
-              const CreateAccountButtons(),
-            ],
-          ),
+    return Scaffold(
+      body: Padding(
+        padding: const EdgeInsets.fromLTRB(0, 60, 0, 10),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            /* Image Slides with the texts */
+            SliderContext(slides: images),
+            /* Image Slide progress indicators */
+            SliderProgress(slideLength: images.length),
+            /* Buttons for the Create Account Screen */
+            const CreateAccountButtons(),
+          ],
         ),
       ),
     );
